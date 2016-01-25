@@ -1,8 +1,3 @@
 {
-	"algolia": {
-		"appId": "<ALGOLIA APP ID>",
-		"apiKey": "<ALGOLIA API KEY (READ PERMISSIONS)>",
-		"writeApiKey": "<ALGOLIA API KEY (WRITE PERMISSIONS)>"
-	},
 	"storeFirebaseRef": "https://<FIREBASE APP>.firebaseio.com"
 }
