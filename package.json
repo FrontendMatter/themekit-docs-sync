@@ -1,0 +1,25 @@
+{
+  "name": "themekit-docs-sync",
+  "version": "0.1.0",
+  "description": "Utility for ThemeKit Docs App to sync Vue.js components from an npm package to Firebase.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel -d ./lib --watch --presets es2015 ./src",
+    "build": "babel -d ./lib --presets es2015 ./src"
+  },
+  "author": "Laza Bogdan <laza.bogdan@macro-net.ro>",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^1.19.0",
+    "mout": "^0.11.1",
+    "themekit-docs-store": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13"
+  },
+  "main": "lib/sync.js",
+  "bin": {
+    "themekit-docs-sync": "./bin/themekit-docs-sync"
+  }
+}
