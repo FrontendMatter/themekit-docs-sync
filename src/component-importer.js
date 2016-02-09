@@ -91,15 +91,16 @@ export default (id, data) => {
 		})
 	}
 
+	const props = []
 	forOwn(input.props, (prop, name, obj) => {
-		obj[name] = {
+		props.push({
 			name: hyphenate(name),
-			description: prop.description || null,
 			type: prop.type ? prop.type.name : null,
 			default: funcToString(prop.default) || null,
 			required: prop.required || null
-		}
+		})
 	})
+	input.props = props
 
 	forOwn(input.events, (event, name, obj) => {
 		obj[slug(name)] = {
